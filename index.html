@@ -10,6 +10,7 @@
             margin: 20px;
             padding: 0;
             background-color: #f4f4f4;
+            box-sizing: border-box;
             color: #333;
         }
         .container {
@@ -26,29 +27,61 @@
         }
         p {
             font-size: 18px;
+            text-align: justify;
         }
-        ul {
+        h2{
+            color: #ff6b6b;
+            font-weight: lighter;
+            margin: 0;
+            text-align: left;
+        }
+        hr{
+            margin: 10px;
+            border: 2px solid #ff6b6b;
+        }
+        .hobbies {
             list-style: none;
             padding: 0;
         }
-        ul li {
+        .hobby-item {
+            display: flex;
+            align-items: center;
             background: #ffcccb;
-            margin: 5px 0;
+            margin: 10px 0;
             padding: 10px;
+            border-radius: 5px;
+        }
+        .hobby-item img {
+            width: 100px;
+            height: 100px;
+            margin-right: 15px;
             border-radius: 5px;
         }
     </style>
 </head>
 <body>
-    <div>
+    <div class="container">
         <h1>Sobre mí</h1>
         <p>Mi nombre es Aylin. Tengo tres hermanos y dos perritos. Me apasiona el diseño y la experiencia del usuario; disfruto tanto diseñar como programar, además de aprender nuevas tecnologías en mi día a día. Uno de mis pasatiempos favoritos es dibujar, ya que me encanta plasmar cualquier tipo de idea en papel o digitalmente</p>
         <h2>Mis Hobbies</h2>
-        <ul>
-            <li>🎨 Dibujar cualquier tipo de cosa</li>
-            <li>💻 Diseñar y programar</li>
-            <li>📚 Aprender nuevas tecnologías</li>
-            <li>🐶 Pasar tiempo con mis perritos</li>
+        <hr>
+        <ul class="hobbies">
+            <li class="hobby-item">
+                <img src="assets/draw.jpg" alt="Dibujar">
+                🎨 Dibujar cualquier tipo de cosa
+            </li>
+            <li class="hobby-item">
+                <img src="assets/program.png" alt="Diseñar y Programar">
+                💻 Diseñar y programar
+            </li>
+            <li class="hobby-item">
+                <img src="assets/tecnologies.jpg" alt="Aprender tecnología">
+                📚 Aprender nuevas tecnologías
+            </li>
+            <li class="hobby-item">
+                <img src="assets/dogs.jpg" alt="Pasar tiempo con mis perritos">
+                🐶 Pasar tiempo con mis perritos
+            </li>
         </ul>
     </div>
 </body>
